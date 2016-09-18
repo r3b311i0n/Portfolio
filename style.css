@@ -1,0 +1,43 @@
+body {
+    font-family: Avenir Next LT Pro;
+}
+
+.logo {
+    max-height: 10em;
+    max-width: 15em;
+    padding-left: 10%;
+}
+
+.top {
+    background-color: white;
+}
+
+.navhead {
+    float: right;
+}
+
+.navhead li a {
+    display: inline-block;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 1.2rem;
+    background-color: white;
+    border: none;
+    color: black;
+}
+
+.navhead li a:hover {
+    color: red;
+}
+
+.navhead li a:active {
+    background-color: white;
+}
+
+.about {
+    margin-top: 6%;
+}
+
+.about p {
+    font-size: 2.8em;
+}
