@@ -8,6 +8,10 @@ body {
     padding-left: 10%;
 }
 
+.logo:hover {
+    cursor: pointer;
+}
+
 .top {
     background-color: white;
 }

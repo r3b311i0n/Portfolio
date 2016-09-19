@@ -16,31 +16,29 @@
         <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
             <div class="row top">
                 <div class="col-xs-6">
-                    <a href="#top">
-                        <img src="logo.png" class="logo" alt="logo">
-                    </a>
+                        <img src="logo.png" class="logo" alt="logo" onclick="scrollToBegin()">
                 </div>
                 <div class="col-xs-6">
                     <ul class="list-inline navhead nav navbar-nav collapse navbar-collapse">
                         <li>
-                            <p class="navbar-btn animated infinite flash" onclick="about(this)">
+                            <p class="navbar-btn animated infinite flash" onclick="_about(this)">
                                 <!--suppress HtmlUnknownAnchorTarget -->
-                                <a class="btn pulse" href="#about" role="button" onmouseover="pulseAnim(this)"
-                                   onmouseout="stopAnim(this)">About</a>
+                                <a class="btn pulse" href="#about" role="button" onmouseover="_pulseAnim(this)"
+                                   onmouseout="_stopAnim(this)">About</a>
                             </p>
                         </li>
                         <li>
-                            <p class="navbar-btn" onclick="portfolio(this)">
+                            <p class="navbar-btn" onclick="_portfolio(this)">
                                 <!--suppress HtmlUnknownAnchorTarget -->
-                                <a class="btn pulse" href="#portfolio" role="button" onmouseover="pulseAnim(this)"
-                                   onmouseout="stopAnim(this)">Portfolio</a>
+                                <a class="btn pulse" href="#portfolio" role="button" onmouseover="_pulseAnim(this)"
+                                   onmouseout="_stopAnim(this)">Portfolio</a>
                             </p>
                         </li>
                         <li>
-                            <p class="navbar-btn" onclick="contact(this)">
+                            <p class="navbar-btn" onclick="_contact(this)">
                                 <!--suppress HtmlUnknownAnchorTarget -->
-                                <a class="btn pulse" href="#contact" role="button" onmouseover="pulseAnim(this)"
-                                   onmouseout="stopAnim(this)">Contact</a>
+                                <a class="btn pulse" href="#contact" role="button" onmouseover="_pulseAnim(this)"
+                                   onmouseout="_stopAnim(this)">Contact</a>
                             </p>
                         </li>
                     </ul>
