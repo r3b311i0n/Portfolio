@@ -64,12 +64,28 @@ body {
 
 .contactHeading {
     font-size: 3em;
-    text-align: center;
     text-decoration: underline;
-    padding-bottom: 3%;
     cursor: default;
 }
 
 .contactHeading:hover {
     color: red;
+}
+
+.padder {
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.socIcon {
+    height: 4em;
+    width: 4em;
+    float: right;
+    padding-right: 1%;
+    padding-left: 1%;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 3%;
 }

@@ -5,9 +5,15 @@ var main = function () {
 
     $(".about p").addClass("animated bounceInLeft");
     $(".about img").addClass("animated bounceInRight");
+
+    $(".portLeft").addClass("animated bounceInLeft");
+    $(".portRight").addClass("animated bounceInRight");
+
+    $(".portfolioHeading").addClass("animated fadeIn");
+    $(".contactHeading").addClass("animated fadeIn");
 };
 
-var _pulseAnim = function (obj) {
+var _startAnim = function (obj) {
     $(obj).addClass("animated infinite");
 };
 
@@ -32,6 +38,8 @@ var _portfolioClick = function (obj) {
 var _contactClick = function (obj) {
     $(".navhead p").removeClass("animated infinite flash");
     $(obj).addClass("animated infinite flash");
+
+    scrollToContact();
 };
 
 var scrollToAbout = function () {
@@ -43,6 +51,12 @@ var scrollToAbout = function () {
 var scrollToPortfolio = function () {
     $("html, body").animate({
         scrollTop: $(".portfolio").offset().top
+    }, 300);
+};
+
+var scrollToContact = function () {
+    $("html, body").animate({
+        scrollTop: $(".contact").offset().top
     }, 300);
 };
 
