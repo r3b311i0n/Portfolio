@@ -1,4 +1,4 @@
-var main = function() {
+var main = function () {
     $(".navhead>li").addClass("animated bounceInDown");
 
     $(".logo").addClass("animated fadeIn");
@@ -7,25 +7,25 @@ var main = function() {
     $(".about img").addClass("animated bounceInRight");
 };
 
-var pulseAnim = function(obj) {
+var pulseAnim = function (obj) {
     $(obj).addClass("animated infinite");
 };
 
-var stopAnim = function(obj) {
+var stopAnim = function (obj) {
     $(obj).removeClass("animated infinite");
 };
 
-var about = function(obj) {
+var about = function (obj) {
     $(".navhead p").removeClass("animated infinite flash");
     $(obj).addClass("animated infinite flash");
 };
 
-var portfolio = function(obj) {
+var portfolio = function (obj) {
     $(".navhead p").removeClass("animated infinite flash");
     $(obj).addClass("animated infinite flash");
 };
 
-var contact = function(obj) {
+var contact = function (obj) {
     $(".navhead p").removeClass("animated infinite flash");
     $(obj).addClass("animated infinite flash");
 };
