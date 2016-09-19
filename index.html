@@ -16,26 +16,26 @@
         <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
             <div class="row top">
                 <div class="col-xs-6">
-                        <img src="logo.png" class="logo" alt="logo" onclick="scrollToBegin()">
+                    <img src="logo.png" class="logo" alt="logo" onclick="scrollToAbout()">
                 </div>
                 <div class="col-xs-6">
                     <ul class="list-inline navhead nav navbar-nav collapse navbar-collapse">
                         <li>
-                            <p class="navbar-btn animated infinite flash" onclick="_about(this)">
+                            <p class="navbar-btn animated infinite flash" onclick="_aboutClick(this)">
                                 <!--suppress HtmlUnknownAnchorTarget -->
                                 <a class="btn pulse" href="#about" role="button" onmouseover="_pulseAnim(this)"
                                    onmouseout="_stopAnim(this)">About</a>
                             </p>
                         </li>
                         <li>
-                            <p class="navbar-btn" onclick="_portfolio(this)">
+                            <p class="navbar-btn" onclick="_portfolioClick(this)">
                                 <!--suppress HtmlUnknownAnchorTarget -->
                                 <a class="btn pulse" href="#portfolio" role="button" onmouseover="_pulseAnim(this)"
                                    onmouseout="_stopAnim(this)">Portfolio</a>
                             </p>
                         </li>
                         <li>
-                            <p class="navbar-btn" onclick="_contact(this)">
+                            <p class="navbar-btn" onclick="_contactClick(this)">
                                 <!--suppress HtmlUnknownAnchorTarget -->
                                 <a class="btn pulse" href="#contact" role="button" onmouseover="_pulseAnim(this)"
                                    onmouseout="_stopAnim(this)">Contact</a>
@@ -62,6 +62,40 @@
             <img src="#" alt="eclipseAnim">
         </div>
     </div>
+</div>
+<div class="container-fluid portfolio">
+    <h1 class="h1 portfolioHeading">
+        Portfolio
+    </h1>
+    <div class="row">
+        <div class="col-xs-6">
+            <a href="#" class="thumbnail">
+                <img src="place1.jpg" alt="Placeholder1">
+            </a>
+            <a href="#" class="thumbnail">
+                <img src="place3.jpg" alt="Placeholder3">
+            </a>
+            <a href="#" class="thumbnail">
+                <img src="place5.jpg" alt="Placeholder5">
+            </a>
+        </div>
+        <div class="col-xs-6">
+            <a href="#" class="thumbnail">
+                <img src="place2.jpg" alt="Placeholder2">
+            </a>
+            <a href="#" class="thumbnail">
+                <img src="place4.jpg" alt="Placeholder4">
+            </a>
+            <a href="#" class="thumbnail">
+                <img src="place6.jpg" alt="Placeholder6">
+            </a>
+        </div>
+    </div>
+</div>
+<div class="container-fluid contact">
+    <h3 class="h3 contactHeading">
+        Contact Me
+    </h3>
 </div>
 <script src="lib/jquery-3.1.0.min.js"></script>
 <script type="text/javascript" src=app.js></script>

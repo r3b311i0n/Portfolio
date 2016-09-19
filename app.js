@@ -15,26 +15,34 @@ var _stopAnim = function (obj) {
     $(obj).removeClass("animated infinite");
 };
 
-var _about = function (obj) {
+var _aboutClick = function (obj) {
     $(".navhead p").removeClass("animated infinite flash");
     $(obj).addClass("animated infinite flash");
 
-    scrollToBegin();
+    scrollToAbout();
 };
 
-var _portfolio = function (obj) {
+var _portfolioClick = function (obj) {
+    $(".navhead p").removeClass("animated infinite flash");
+    $(obj).addClass("animated infinite flash");
+
+    scrollToPortfolio();
+};
+
+var _contactClick = function (obj) {
     $(".navhead p").removeClass("animated infinite flash");
     $(obj).addClass("animated infinite flash");
 };
 
-var _contact = function (obj) {
-    $(".navhead p").removeClass("animated infinite flash");
-    $(obj).addClass("animated infinite flash");
-};
-
-var scrollToBegin = function () {
+var scrollToAbout = function () {
     $("html, body").animate({
         scrollTop: $("#top").offset().top
+    }, 300);
+};
+
+var scrollToPortfolio = function () {
+    $("html, body").animate({
+        scrollTop: $(".portfolio").offset().top
     }, 300);
 };
 
