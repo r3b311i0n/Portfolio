@@ -63,7 +63,7 @@ var waypoints = function () {
             $(".navhead p").removeClass("animated infinite pulse");
             $("#aboutButton").addClass("animated infinite pulse");
         },
-        offset: -100
+        offset: -50
     });
 
     var _wayPortHeader = new Waypoint({
