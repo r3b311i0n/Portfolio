@@ -6,11 +6,12 @@ var main = function () {
     $(".about p").addClass("animated bounceInLeft");
     $(".about img").addClass("animated bounceInRight");
 
-    $(".portLeft").addClass("animated bounceInLeft");
-    $(".portRight").addClass("animated bounceInRight");
+    // $(".portLeft").addClass("animated bounceInLeft");
+    // $(".portRight").addClass("animated bounceInRight");
 
-    $(".portfolioHeading").addClass("animated fadeIn");
     $(".contactHeading").addClass("animated fadeIn");
+
+    waypoints();
 };
 
 var _startAnim = function (obj) {
@@ -58,6 +59,24 @@ var scrollToContact = function () {
     $("html, body").animate({
         scrollTop: $(".contact").offset().top
     }, 300);
+};
+
+var waypoints = function () {
+    var _wayPortHeader = new Waypoint({
+        element: $(".portfolioHeading"),
+        handler: function () {
+            $(".portfolioHeading").addClass("animated fadeIn").css("opacity: 100;");
+        },
+        offset: "bottom-in-view"
+    });
+
+    var _wayThumb = new Waypoint({
+        element: $(".thumbRow1"),
+        handler: function () {
+            $(".portLeft .thumbRow1").addClass("animated bounceInLeft").css("opacity: 100;");
+        },
+        offset: "bottom-in-view"
+    });
 };
 
 $(document).ready(main);
