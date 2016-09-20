@@ -3,13 +3,17 @@ body {
 }
 
 .logo {
-    max-height: 10em;
-    max-width: 15em;
+    max-height: 9em;
+    max-width: 12em;
     padding-left: 10%;
 }
 
 .logo:hover {
     cursor: pointer;
+}
+
+.break {
+    border-color: red;
 }
 
 .top {
@@ -19,6 +23,7 @@ body {
 .me {
     height: 30em;
     width: 40em;
+    margin-top: 3rem;
 }
 
 .navhead {
@@ -43,12 +48,8 @@ body {
     background-color: white;
 }
 
-.about {
-    margin-top: 6%;
-}
-
 .about p {
-    font-size: 2.4em;
+    font-size: 2em;
 }
 
 .portfolio {
@@ -94,6 +95,7 @@ body {
 .padder {
     padding-left: 3%;
     padding-right: 3%;
+    margin-top: 8rem;
 }
 
 .social {
