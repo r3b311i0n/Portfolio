@@ -6,11 +6,6 @@ var main = function () {
     $(".about p").addClass("animated bounceInLeft");
     $(".about img").addClass("animated bounceInRight");
 
-    // $(".portLeft").addClass("animated bounceInLeft");
-    // $(".portRight").addClass("animated bounceInRight");
-
-    $(".contactHeading").addClass("animated fadeIn");
-
     waypoints();
 };
 
@@ -23,22 +18,22 @@ var _stopAnim = function (obj) {
 };
 
 var _aboutClick = function (obj) {
-    $(".navhead p").removeClass("animated infinite flash");
-    $(obj).addClass("animated infinite flash");
+    $(".navhead p").removeClass("animated infinite pulse");
+    $(obj).addClass("animated infinite pulse");
 
     scrollToAbout();
 };
 
 var _portfolioClick = function (obj) {
-    $(".navhead p").removeClass("animated infinite flash");
-    $(obj).addClass("animated infinite flash");
+    $(".navhead p").removeClass("animated infinite pulse");
+    $(obj).addClass("animated infinite pulse");
 
     scrollToPortfolio();
 };
 
 var _contactClick = function (obj) {
-    $(".navhead p").removeClass("animated infinite flash");
-    $(obj).addClass("animated infinite flash");
+    $(".navhead p").removeClass("animated infinite pulse");
+    $(obj).addClass("animated infinite pulse");
 
     scrollToContact();
 };
@@ -62,18 +57,65 @@ var scrollToContact = function () {
 };
 
 var waypoints = function () {
+    var _wayAbout = new Waypoint({
+        element: $(".about"),
+        handler: function () {
+            $(".navhead p").removeClass("animated infinite pulse");
+            $("#aboutButton").addClass("animated infinite pulse");
+        },
+        offset: -100
+    });
+
     var _wayPortHeader = new Waypoint({
         element: $(".portfolioHeading"),
         handler: function () {
             $(".portfolioHeading").addClass("animated fadeIn").css("opacity: 100;");
+            $(".navhead p").removeClass("animated infinite pulse");
+            $("#portButton").addClass("animated infinite pulse");
         },
         offset: "bottom-in-view"
     });
 
-    var _wayThumb = new Waypoint({
+    var _wayThumbRow1 = new Waypoint({
         element: $(".thumbRow1"),
         handler: function () {
-            $(".portLeft .thumbRow1").addClass("animated bounceInLeft").css("opacity: 100;");
+            $(".thumbRow1").addClass("animated fadeIn").css("opacity: 100;");
+        },
+        offset: 400
+    });
+
+    var _wayThumbRow2 = new Waypoint({
+        element: $(".thumbRow2"),
+        handler: function () {
+            $(".thumbRow2").addClass("animated fadeIn").css("opacity: 100;");
+        },
+        offset: 400
+    });
+
+    var _wayThumbRow3 = new Waypoint({
+        element: $(".thumbRow3"),
+        handler: function () {
+            $(".thumbRow3").addClass("animated fadeIn").css("opacity: 100;");
+            $(".navhead p").removeClass("animated infinite pulse");
+            $("#portButton").addClass("animated infinite pulse");
+        },
+        offset: 400
+    });
+
+    var _wayContactHeader = new Waypoint({
+        element: $(".contactHeading"),
+        handler: function () {
+            $(".contactHeading").addClass("animated fadeIn").css("opacity: 100;");
+            $(".navhead p").removeClass("animated infinite pulse");
+            $("#contactButton").addClass("animated infinite pulse");
+        },
+        offset: "bottom-in-view"
+    });
+
+    var _waySocialButtons = new Waypoint({
+        element: $(".social"),
+        handler: function () {
+            $(".social").addClass("animated rotateIn").css("opacity: 100;");
         },
         offset: "bottom-in-view"
     });

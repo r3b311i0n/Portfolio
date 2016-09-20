@@ -21,23 +21,23 @@
                 <div class="col-xs-6">
                     <ul class="list-inline navhead nav navbar-nav collapse navbar-collapse">
                         <li>
-                            <p class="navbar-btn animated infinite flash" onclick="_aboutClick(this)">
+                            <p class="navbar-btn animated infinite pulse" onclick="_aboutClick(this)" id="aboutButton">
                                 <!--suppress HtmlUnknownAnchorTarget -->
-                                <a class="btn pulse" href="#about" role="button" onmouseover="_startAnim(this)"
+                                <a class="btn flash" href="#about" role="button" onmouseover="_startAnim(this)"
                                    onmouseout="_stopAnim(this)">About</a>
                             </p>
                         </li>
                         <li>
-                            <p class="navbar-btn" onclick="_portfolioClick(this)">
+                            <p class="navbar-btn" onclick="_portfolioClick(this)" id="portButton">
                                 <!--suppress HtmlUnknownAnchorTarget -->
-                                <a class="btn pulse" href="#portfolio" role="button" onmouseover="_startAnim(this)"
+                                <a class="btn flash" href="#portfolio" role="button" onmouseover="_startAnim(this)"
                                    onmouseout="_stopAnim(this)">Portfolio</a>
                             </p>
                         </li>
                         <li>
-                            <p class="navbar-btn" onclick="_contactClick(this)">
+                            <p class="navbar-btn" onclick="_contactClick(this)" id="contactButton">
                                 <!--suppress HtmlUnknownAnchorTarget -->
-                                <a class="btn pulse" href="#contact" role="button" onmouseover="_startAnim(this)"
+                                <a class="btn flash" href="#contact" role="button" onmouseover="_startAnim(this)"
                                    onmouseout="_stopAnim(this)">Contact</a>
                             </p>
                         </li>
@@ -50,7 +50,7 @@
 <div class="padder">
     <div class="container-fluid about">
         <div class="row">
-            <div class="col-xs-8">
+            <div class="col-xs-7">
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
                     et
@@ -62,8 +62,8 @@
                     deserunt mollit anim id est laborum.
                 </p>
             </div>
-            <div class="col-xs-4">
-                <img src="#" alt="eclipseAnim">
+            <div class="col-xs-5">
+                <img src="me.jpg" alt="me" class="me">
             </div>
         </div>
     </div>
@@ -73,26 +73,38 @@
         </h1>
         <div class="row">
             <div class="col-xs-6 portLeft">
-                <a href="#" class="thumbnail thumbRow1">
-                    <img src="place1.jpg" alt="Placeholder1">
-                </a>
-                <a href="https://codepen.io/r3b311i0n/full/ORPjJJ/" class="thumbnail thumbRow2" target="_blank">
-                    <img src="place3.jpg" alt="Placeholder3">
-                </a>
-                <a href="#" class="thumbnail thumbRow3">
-                    <img src="place5.jpg" alt="Placeholder5">
-                </a>
+                <div class="thumbRow1">
+                    <a href="#" class="thumbnail">
+                        <img src="place1.jpg" alt="Placeholder1">
+                    </a>
+                </div>
+                <div class="thumbRow2">
+                    <a href="https://codepen.io/r3b311i0n/full/ORPjJJ/" class="thumbnail" target="_blank">
+                        <img src="place3.jpg" alt="Placeholder3">
+                    </a>
+                </div>
+                <div class="thumbRow3">
+                    <a href="#" class="thumbnail">
+                        <img src="place5.jpg" alt="Placeholder5">
+                    </a>
+                </div>
             </div>
             <div class="col-xs-6 portRight">
-                <a href="#" class="thumbnail thumbRow1">
-                    <img src="place2.jpg" alt="Placeholder2">
-                </a>
-                <a href="#" class="thumbnail thumbRow2">
-                    <img src="place4.jpg" alt="Placeholder4">
-                </a>
-                <a href="#" class="thumbnail thumbRow3">
-                    <img src="place6.jpg" alt="Placeholder6">
-                </a>
+                <div class="thumbRow1">
+                    <a href="#" class="thumbnail thumbRow1">
+                        <img src="place2.jpg" alt="Placeholder2">
+                    </a>
+                </div>
+                <div class="thumbRow2">
+                    <a href="#" class="thumbnail">
+                        <img src="place4.jpg" alt="Placeholder4">
+                    </a>
+                </div>
+                <div class="thumbRow3">
+                    <a href="#" class="thumbnail">
+                        <img src="place6.jpg" alt="Placeholder6">
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -104,18 +116,20 @@
                 </h3>
             </div>
             <div class="col-xs-4">
-                <a href="https://www.github.com/r3b311i0n" target="_blank">
-                    <img src="github-logo.svg" alt="github" class="socIcon flash" onmouseover="_startAnim(this)"
-                         onmouseleave="_stopAnim(this)"/>
-                </a>
-                <a href="https://www.linkedin.com/in/amal-karunarathna-59196a85" target="_blank">
-                    <img src="linkedin-logo.svg" alt="linkedin" class="socIcon flash" onmouseover="_startAnim(this)"
-                         onmouseleave="_stopAnim(this)"/>
-                </a>
-                <a href="https://www.twitter.com/r3b311i0n" target="_blank">
-                    <img src="twitter-logo.svg" alt="twitter" class="socIcon flash" onmouseover="_startAnim(this)"
-                         onmouseleave="_stopAnim(this)"/>
-                </a>
+                <div class="social">
+                    <a href="https://www.github.com/r3b311i0n" target="_blank">
+                        <img src="github-logo.svg" alt="github" class="socIcon flash" onmouseover="_startAnim(this)"
+                             onmouseleave="_stopAnim(this)"/>
+                    </a>
+                    <a href="https://www.linkedin.com/in/amal-karunarathna-59196a85" target="_blank">
+                        <img src="linkedin-logo.svg" alt="linkedin" class="socIcon flash" onmouseover="_startAnim(this)"
+                             onmouseleave="_stopAnim(this)"/>
+                    </a>
+                    <a href="https://www.twitter.com/r3b311i0n" target="_blank">
+                        <img src="twitter-logo.svg" alt="twitter" class="socIcon flash" onmouseover="_startAnim(this)"
+                             onmouseleave="_stopAnim(this)"/>
+                    </a>
+                </div>
             </div>
         </div>
     </div>

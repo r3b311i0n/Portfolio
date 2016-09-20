@@ -1,5 +1,5 @@
 body {
-    font-family: Avenir Next LT Pro, serif;
+    font-family: Avenir Next LT Pro, "Helvetica Neue", serif;
 }
 
 .logo {
@@ -14,6 +14,11 @@ body {
 
 .top {
     background-color: white;
+}
+
+.me {
+    height: 26.25em;
+    width: 35em;
 }
 
 .navhead {
@@ -63,10 +68,23 @@ body {
     color: red;
 }
 
+.thumbRow1 {
+    opacity: 0;
+}
+
+.thumbRow2 {
+    opacity: 0;
+}
+
+.thumbRow3 {
+    opacity: 0;
+}
+
 .contactHeading {
     font-size: 3em;
     text-decoration: underline;
     cursor: default;
+    opacity: 0;
 }
 
 .contactHeading:hover {
@@ -76,6 +94,10 @@ body {
 .padder {
     padding-left: 3%;
     padding-right: 3%;
+}
+
+.social {
+    opacity: 0;
 }
 
 .socIcon {
