@@ -48,6 +48,10 @@ body {
     background-color: white;
 }
 
+.navhead li a:focus {
+    outline: none;
+}
+
 .about p {
     font-size: 2em;
 }
